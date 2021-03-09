@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <link rel="stylesheet" href="">
+    <title>Welcome to Kokoa Clone</title>
 </head>
 <body>
     <div id="status-bar">
@@ -19,8 +20,18 @@
             <i class="fas fa-battery-three-quarters"></i>
             <i class="fas fa-bolt"></i>
         </div>
-
     </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with Your email or Phone Number.</p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="Email or Phone number"/>
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Log In" />
+        <a href="#">Find a Kokoa Account or Password</a>
+    </form>
+
     <script src="https://kit.fontawesome.com/0e69f9ea4c.js" crossorigin="anonymous"></script>
 </body>
 </html>
