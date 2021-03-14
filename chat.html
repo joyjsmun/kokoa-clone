@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - Kokoa Clone</title>
+    <title>Chat - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -24,67 +24,62 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="chats.html">
         <i class="fas fa-angle-left fa-3x"></i>
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">뷔탈릭</h1>
       </div>
       <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
-      </div>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      
+    </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-          <i class="fas fa-bullhorn"></i>
-          <span>Notices</span>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Friday, Mar 12, 2021
+      </div>
+
+      <div class="message-row">
+        <img src="https://avatars.githubusercontent.com/u/18157846?s=460&u=493028820d42b642d4d90ce730fa8b9b1bd15c11&v=4" >
+        <div class="message-row__content">
+          <span class="message__author">Joy M</span>
+          <div class="message__info">
+            <span class="message__bubble">Hello</span>
+            <span class="message__time">19:48</span>
+          </div>
         </div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-          <i class="fas fa-flask"></i>
-          <span>Kokoa Lab</span>
+      </div>
+
+      <div class="message-row message-row--own">
+            <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__time">19:48</span>
+            <span class="message__bubble">Yes~~ </span>
           </div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-          <i class="fas fa-info-circle"></i>
-          <span>Version</span>
-          </div>
-          <div class="settings__setting-column">Latest Version</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <form action="" class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message...">
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Please adjust your screen to Mobile size Screen!</span> 
+   </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
